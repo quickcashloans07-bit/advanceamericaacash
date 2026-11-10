@@ -1,6 +1,10 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Target, Users, Award, CheckCircle, FileText, CreditCard, MousePointer, Scale } from "lucide-react";
+import team1 from "@/assets/team-1.jpg";
+import team2 from "@/assets/team-2.jpg";
+import team3 from "@/assets/team-3.jpg";
+import team4 from "@/assets/testimonial-1.jpg";
 
 const About = () => {
   return (
@@ -178,10 +182,10 @@ const About = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { name: "James Anderson", role: "Accounting Manager", image: "https://onecapitalloans.com/assets/images/e1.avif" },
-                { name: "Jacob Smith", role: "Sr. Loan Officer", image: "https://onecapitalloans.com/assets/images/e2.avif" },
-                { name: "Jennifer Ross", role: "Documents Manager - Activation", image: "https://onecapitalloans.com/assets/images/e3.avif" },
-                { name: "Catherine Dorsen", role: "Verification Team - Accounts", image: "https://onecapitalloans.com/assets/images/e4.jpg" }
+                { name: "James Anderson", role: "Accounting Manager", image: team1 },
+                { name: "Jacob Smith", role: "Sr. Loan Officer", image: team2 },
+                { name: "Jennifer Ross", role: "Documents Manager - Activation", image: team3 },
+                { name: "Catherine Dorsen", role: "Verification Team - Accounts", image: team4 }
               ].map((member, i) => (
                 <div key={i} className="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 group hover:-translate-y-2 transition-transform duration-300">
                   <div className="aspect-[4/5] overflow-hidden">

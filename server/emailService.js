@@ -1,27 +1,14 @@
 import nodemailer from "nodemailer";
+import dotenv from "dotenv";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const {
-  SMTP_HOST,
-  SMTP_PORT,
-  SMTP_USER,
-  SMTP_PASS,
-  RECIPIENT_EMAIL,
-  EMAIL_FROM_NAME = "Loan Applications",
-} = process.env;
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-if (!SMTP_HOST || !SMTP_PORT || !SMTP_USER || !SMTP_PASS || !RECIPIENT_EMAIL) {
-  console.warn("[emailService] Missing SMTP configuration. Check environment variables.");
-}
-
-const transporter = nodemailer.createTransport({
-  host: SMTP_HOST,
-  port: Number(SMTP_PORT || 587),
-  secure: Number(SMTP_PORT) === 465,
-  auth: {
-    user: SMTP_USER,
-    pass: SMTP_PASS,
-  },
-});
+dotenv.config({ path: path.resolve(__dirname, ".env") });
+dotenv.config({ path: path.resolve(__dirname, "../.env") });
+dotenv.config();
 
 const formatHTML = (data) => `
 <!DOCTYPE html>
@@ -94,13 +81,36 @@ ${Object.entries(data).map(([k, v]) => `${k.replace(/([A-Z])/g, ' $1').replace(/
 `;
 
 export const sendLoanApplicationEmail = async (data) => {
-  if (!RECIPIENT_EMAIL) {
-    throw new Error("Recipient email is not configured");
+  const host = process.env.SMTP_HOST;
+  const port = Number(process.env.SMTP_PORT || 587);
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  const recipientEmail = process.env.RECIPIENT_EMAIL;
+  const fromName = process.env.EMAIL_FROM_NAME || "Loan Applications";
+
+  if (!recipientEmail || !user || !pass || !host) {
+    const missing = [
+      !host && "SMTP_HOST",
+      !user && "SMTP_USER",
+      !pass && "SMTP_PASS",
+      !recipientEmail && "RECIPIENT_EMAIL",
+    ].filter(Boolean);
+    throw new Error(`SMTP configuration incomplete. Missing environment variable(s): ${missing.join(", ")}`);
   }
 
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure: port === 465,
+    auth: {
+      user,
+      pass,
+    },
+  });
+
   await transporter.sendMail({
-    from: `${EMAIL_FROM_NAME} <${SMTP_USER}>`,
-    to: RECIPIENT_EMAIL,
+    from: `${fromName} <${user}>`,
+    to: recipientEmail,
     subject: "New Loan Application Received",
     text: formatText(data),
     html: formatHTML(data),

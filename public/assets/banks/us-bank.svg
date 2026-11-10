@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <rect x="15" y="14" width="52" height="52" rx="10" fill="#002D62"/>
+  <path d="M41 22v36M25 38c0 9 7 14 16 14s16-5 16-14" stroke="#D32F2F" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <text x="80" y="48" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="26" font-weight="bold" fill="#002D62">us bank</text>
+</svg>

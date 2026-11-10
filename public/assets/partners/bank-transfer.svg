@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <circle cx="45" cy="40" r="28" fill="#0D9488"/>
+  <g fill="#FFFFFF" transform="translate(29, 24)">
+    <polygon points="16,2 32,10 0,10"/>
+    <rect x="3" y="12" width="4" height="12"/>
+    <rect x="10" y="12" width="4" height="12"/>
+    <rect x="18" y="12" width="4" height="12"/>
+    <rect x="25" y="12" width="4" height="12"/>
+    <rect x="0" y="26" width="32" height="4"/>
+  </g>
+  <text x="88" y="38" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#1f2937" letter-spacing="1">BANK</text>
+  <text x="88" y="57" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="16" font-weight="bold" fill="#0D9488" letter-spacing="1">TRANSFER</text>
+</svg>

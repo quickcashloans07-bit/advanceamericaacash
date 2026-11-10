@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <circle cx="42" cy="40" r="28" fill="#002D62"/>
+  <polygon points="42,18 46,30 58,30 49,38 52,50 42,43 32,50 35,38 26,30 38,30" fill="#EAAA00"/>
+  <text x="82" y="37" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="19" font-weight="bold" fill="#002D62" letter-spacing="0.5">NAVY FEDERAL</text>
+  <text x="82" y="56" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#708090" letter-spacing="1">Credit Union</text>
+</svg>

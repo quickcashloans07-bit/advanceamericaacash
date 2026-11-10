@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <g transform="translate(15, 14)">
+    <path fill="#117ACA" d="M0 26.5c0 .8.6 1.4 1.4 1.4h9.8V1L0 13.3v13.2z"/>
+    <path fill="#117ACA" d="M26.5 41.5c.8 0 1.4-.6 1.4-1.4v-9.8H1l12.3 11.2h13.2z"/>
+    <path fill="#117ACA" d="M41.5 15c0-.8-.6-1.4-1.4-1.4h-9.8v27.2l11.2-12.3V15z"/>
+    <path fill="#117ACA" d="M15 0c-.8 0-1.4.6-1.4 1.4v9.8h27.2L28.5 0H15z"/>
+  </g>
+  <text x="75" y="49" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="34" font-weight="bold" fill="#117ACA" letter-spacing="2">CHASE</text>
+</svg>

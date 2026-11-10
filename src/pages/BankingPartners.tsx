@@ -2,22 +2,22 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 const financePartners = [
-  { name: "Cash App", image: "https://onecapitalloans.com/assets/images/logos/logo1.png" },
-  { name: "Apple Pay", image: "https://onecapitalloans.com/assets/images/logos/img3.jpeg" },
-  { name: "bitcoin", image: "https://onecapitalloans.com/assets/images/logos/img4.jpeg" },
-  { name: "WIRE TRANSFER", image: "https://onecapitalloans.com/assets/images/logos/img5.png" },
-  { name: "BANK TRANSFER", image: "https://onecapitalloans.com/assets/images/logos/img65.png" }
+  { name: "Cash App", image: "/assets/partners/cash-app.svg" },
+  { name: "Apple Pay", image: "/assets/partners/apple-pay.svg" },
+  { name: "bitcoin", image: "/assets/partners/bitcoin.svg" },
+  { name: "WIRE TRANSFER", image: "/assets/partners/wire-transfer.svg" },
+  { name: "BANK TRANSFER", image: "/assets/partners/bank-transfer.svg" }
 ];
 
 const offlinePartners = [
-  { name: "Walmart", image: "https://onecapitalloans.com/assets/images/logos/img6.png" },
-  { name: "Walgreens", image: "https://onecapitalloans.com/assets/images/logos/img7.jpeg" },
-  { name: "Dollar General", image: "https://onecapitalloans.com/assets/images/logos/img8.jpeg" },
-  { name: "Family Dollar", image: "https://onecapitalloans.com/assets/images/logos/img9.jpeg" },
-  { name: "7-Eleven", image: "https://onecapitalloans.com/assets/images/logos/img10.jpeg" },
-  { name: "CVS Pharmacy", image: "https://onecapitalloans.com/assets/images/logos/img11.jpeg" },
-  { name: "Rite Aid", image: "https://onecapitalloans.com/assets/images/logos/img12.jpeg" },
-  { name: "Kroger", image: "https://onecapitalloans.com/assets/images/logos/img13.jpeg" }
+  { name: "Walmart", image: "/assets/partners/walmart.svg" },
+  { name: "Walgreens", image: "/assets/partners/walgreens.svg" },
+  { name: "Dollar General", image: "/assets/partners/dollar-general.svg" },
+  { name: "Family Dollar", image: "/assets/partners/family-dollar.svg" },
+  { name: "7-Eleven", image: "/assets/partners/7-eleven.svg" },
+  { name: "CVS Pharmacy", image: "/assets/partners/cvs.svg" },
+  { name: "Rite Aid", image: "/assets/partners/rite-aid.svg" },
+  { name: "Kroger", image: "/assets/partners/kroger.svg" }
 ];
 
 const BankingPartners = () => {

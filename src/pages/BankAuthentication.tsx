@@ -3,17 +3,17 @@ import Footer from "@/components/Footer";
 import { useNavigate } from "react-router-dom";
 
 const bankLogos = [
-  { name: "Chase", url: "https://onecapitalloans.com/assets/images/banks/chase_bank-logo.svg" },
-  { name: "Bank of America", url: "https://onecapitalloans.com/assets/images/banks/bank_of_america-logo.svg" },
-  { name: "Wells Fargo", url: "https://onecapitalloans.com/assets/images/banks/wells_fargo-logo.svg" },
-  { name: "TD Bank", url: "https://onecapitalloans.com/assets/images/banks/td_bank-_n.a.-logo.svg" },
-  { name: "Navy Federal Credit Union", url: "https://onecapitalloans.com/assets/images/banks/navy-federal-credit.svg" },
-  { name: "Truist", url: "https://onecapitalloans.com/assets/images/banks/622714be74a10c92f2ae0797.png" },
-  { name: "Regions", url: "https://onecapitalloans.com/assets/images/banks/regions-bank.svg" },
-  { name: "USAA", url: "https://onecapitalloans.com/assets/images/banks/pngwing.png" },
-  { name: "KeyBank", url: "https://onecapitalloans.com/assets/images/banks/keybank-logo.svg" },
-  { name: "Citibank", url: "https://onecapitalloans.com/assets/images/banks/citi-bank.png" },
-  { name: "US Bank", url: "https://onecapitalloans.com/assets/images/banks/us-banks.jpeg" },
+  { name: "Chase", url: "/assets/banks/chase.svg" },
+  { name: "Bank of America", url: "/assets/banks/bank-of-america.svg" },
+  { name: "Wells Fargo", url: "/assets/banks/wells-fargo.svg" },
+  { name: "TD Bank", url: "/assets/banks/td-bank.svg" },
+  { name: "Navy Federal Credit Union", url: "/assets/banks/navy-federal.svg" },
+  { name: "Truist", url: "/assets/banks/truist.svg" },
+  { name: "Regions", url: "/assets/banks/regions.svg" },
+  { name: "USAA", url: "/assets/banks/usaa.svg" },
+  { name: "KeyBank", url: "/assets/banks/keybank.svg" },
+  { name: "Citibank", url: "/assets/banks/citibank.svg" },
+  { name: "US Bank", url: "/assets/banks/us-bank.svg" },
 ];
 
 const BankAuthentication = () => {

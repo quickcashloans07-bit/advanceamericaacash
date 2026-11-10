@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <rect x="15" y="15" width="50" height="50" rx="10" fill="#240046"/>
+  <rect x="25" y="25" width="12" height="12" rx="3" fill="#00D2D2"/>
+  <rect x="43" y="43" width="12" height="12" rx="3" fill="#FFFFFF"/>
+  <text x="80" y="52" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="32" font-weight="bold" fill="#240046" letter-spacing="1.5">TRUIST</text>
+</svg>

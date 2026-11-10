@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <g transform="translate(15, 18)">
+    <path fill="#E31837" d="M0 0h12l10 16H10z"/>
+    <path fill="#012169" d="M16 0h12l10 16H26z"/>
+    <path fill="#E31837" d="M6 24h12l10 16H16z"/>
+    <path fill="#012169" d="M22 24h12l10 16H32z"/>
+  </g>
+  <text x="78" y="42" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="24" font-weight="bold" fill="#012169">Bank of America</text>
+</svg>
