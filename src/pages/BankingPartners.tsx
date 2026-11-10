@@ -33,11 +33,11 @@ const BankingPartners = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {financePartners.map((partner, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 flex flex-col items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-md aspect-square">
+              <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center justify-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md aspect-square">
                 <img 
                   src={partner.image} 
                   alt={partner.name}
-                  className="w-full h-full object-contain max-h-24 mix-blend-multiply" 
+                  className="w-auto h-auto max-w-[85%] max-h-20 object-contain" 
                 />
               </div>
             ))}
@@ -51,11 +51,11 @@ const BankingPartners = () => {
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {offlinePartners.map((partner, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 flex flex-col items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-md aspect-[4/3]">
+              <div key={index} className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 flex flex-col items-center justify-center transition-all duration-200 hover:-translate-y-1 hover:shadow-md aspect-[4/3]">
                 <img 
                   src={partner.image} 
                   alt={partner.name}
-                  className="w-full h-full object-contain max-h-28 mix-blend-multiply" 
+                  className="w-auto h-auto max-w-[85%] max-h-20 object-contain" 
                 />
               </div>
             ))}

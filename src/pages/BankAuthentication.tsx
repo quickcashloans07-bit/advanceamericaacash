@@ -51,14 +51,13 @@ const BankAuthentication = () => {
               <div 
                 key={index}
                 onClick={() => handleBankClick(bank.name, bank.url)}
-                className="cursor-pointer hover:shadow-lg transition-shadow bg-white rounded-lg flex items-center justify-center p-4"
-                style={{ border: "1px solid #eee", height: "140px" }}
+                className="cursor-pointer hover:shadow-lg transition-all duration-200 bg-white rounded-xl flex items-center justify-center p-6"
+                style={{ border: "1px solid #e5e7eb", height: "130px" }}
               >
                 <img 
                   src={bank.url} 
                   alt={bank.name} 
-                  className="max-h-full max-w-full object-contain"
-                  style={{ height: "auto", width: "auto", maxHeight: "100px" }}
+                  className="w-auto h-auto max-w-[85%] max-h-16 object-contain"
                 />
               </div>
             ))}
